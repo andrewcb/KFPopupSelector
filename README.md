@@ -7,6 +7,8 @@ __KFPopupSelector__ is a Cocoa Touch control which presents a simple popup menu 
 
 * Handling of button label is configurable; can be fixed or changed to selected value, and can optionally be decorated with a downward triangle.
 
+There is more information on the design and implementation of this control [here](http://tech.null.org/item/201505291610_popover_menu_ctrl_io).
+
 ## Example
 
 A simple example of using KFPopupSelector:

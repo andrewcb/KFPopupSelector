@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		447430F21B15397000DC29E4 /* KFPopupSelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447430F11B15397000DC29E4 /* KFPopupSelectorTests.swift */; };
+		447431071B153D4800DC29E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447430FF1B153D4800DC29E4 /* AppDelegate.swift */; };
+		447431081B153D4800DC29E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 447431001B153D4800DC29E4 /* LaunchScreen.xib */; };
+		447431091B153D4800DC29E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447431021B153D4800DC29E4 /* Main.storyboard */; };
+		4474310A1B153D4800DC29E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447431041B153D4800DC29E4 /* Images.xcassets */; };
+		4474310B1B153D4800DC29E4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 447431051B153D4800DC29E4 /* Info.plist */; };
+		4474310C1B153D4800DC29E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447431061B153D4800DC29E4 /* ViewController.swift */; };
+		4474310E1B153D6700DC29E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4474310D1B153D6700DC29E4 /* Default-568h@2x.png */; };
+		447431111B15418A00DC29E4 /* KFPopupSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447431101B15418A00DC29E4 /* KFPopupSelector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		447430EC1B15397000DC29E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 447430CE1B15397000DC29E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 447430D51B15397000DC29E4;
+			remoteInfo = KFPopupSelector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		447430D61B15397000DC29E4 /* KFPopupSelector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFPopupSelector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		447430EB1B15397000DC29E4 /* KFPopupSelectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KFPopupSelectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		447430F01B15397000DC29E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447430F11B15397000DC29E4 /* KFPopupSelectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFPopupSelectorTests.swift; sourceTree = "<group>"; };
+		447430FF1B153D4800DC29E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		447431011B153D4800DC29E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		447431031B153D4800DC29E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		447431041B153D4800DC29E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		447431051B153D4800DC29E4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		447431061B153D4800DC29E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4474310D1B153D6700DC29E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		447431101B15418A00DC29E4 /* KFPopupSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KFPopupSelector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		447430D31B15397000DC29E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447430E81B15397000DC29E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		447430CD1B15397000DC29E4 = {
+			isa = PBXGroup;
+			children = (
+				4474310D1B153D6700DC29E4 /* Default-568h@2x.png */,
+				447430D81B15397000DC29E4 /* KFPopupSelector */,
+				447430EE1B15397000DC29E4 /* KFPopupSelectorTests */,
+				447430D71B15397000DC29E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		447430D71B15397000DC29E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				447430D61B15397000DC29E4 /* KFPopupSelector.app */,
+				447430EB1B15397000DC29E4 /* KFPopupSelectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		447430D81B15397000DC29E4 /* KFPopupSelector */ = {
+			isa = PBXGroup;
+			children = (
+				4474310F1B15416A00DC29E4 /* KFPopupSelector control */,
+				447430FE1B153D4800DC29E4 /* Example App */,
+			);
+			path = KFPopupSelector;
+			sourceTree = "<group>";
+		};
+		447430EE1B15397000DC29E4 /* KFPopupSelectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				447430F11B15397000DC29E4 /* KFPopupSelectorTests.swift */,
+				447430EF1B15397000DC29E4 /* Supporting Files */,
+			);
+			path = KFPopupSelectorTests;
+			sourceTree = "<group>";
+		};
+		447430EF1B15397000DC29E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				447430F01B15397000DC29E4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		447430FE1B153D4800DC29E4 /* Example App */ = {
+			isa = PBXGroup;
+			children = (
+				447430FF1B153D4800DC29E4 /* AppDelegate.swift */,
+				447431001B153D4800DC29E4 /* LaunchScreen.xib */,
+				447431021B153D4800DC29E4 /* Main.storyboard */,
+				447431041B153D4800DC29E4 /* Images.xcassets */,
+				447431051B153D4800DC29E4 /* Info.plist */,
+				447431061B153D4800DC29E4 /* ViewController.swift */,
+			);
+			path = "Example App";
+			sourceTree = "<group>";
+		};
+		4474310F1B15416A00DC29E4 /* KFPopupSelector control */ = {
+			isa = PBXGroup;
+			children = (
+				447431101B15418A00DC29E4 /* KFPopupSelector.swift */,
+			);
+			path = "KFPopupSelector control";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		447430D51B15397000DC29E4 /* KFPopupSelector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447430F51B15397000DC29E4 /* Build configuration list for PBXNativeTarget "KFPopupSelector" */;
+			buildPhases = (
+				447430D21B15397000DC29E4 /* Sources */,
+				447430D31B15397000DC29E4 /* Frameworks */,
+				447430D41B15397000DC29E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KFPopupSelector;
+			productName = KFPopupSelector;
+			productReference = 447430D61B15397000DC29E4 /* KFPopupSelector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		447430EA1B15397000DC29E4 /* KFPopupSelectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 447430F81B15397000DC29E4 /* Build configuration list for PBXNativeTarget "KFPopupSelectorTests" */;
+			buildPhases = (
+				447430E71B15397000DC29E4 /* Sources */,
+				447430E81B15397000DC29E4 /* Frameworks */,
+				447430E91B15397000DC29E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				447430ED1B15397000DC29E4 /* PBXTargetDependency */,
+			);
+			name = KFPopupSelectorTests;
+			productName = KFPopupSelectorTests;
+			productReference = 447430EB1B15397000DC29E4 /* KFPopupSelectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		447430CE1B15397000DC29E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Kineticfactory;
+				TargetAttributes = {
+					447430D51B15397000DC29E4 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					447430EA1B15397000DC29E4 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 447430D51B15397000DC29E4;
+					};
+				};
+			};
+			buildConfigurationList = 447430D11B15397000DC29E4 /* Build configuration list for PBXProject "KFPopupSelector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 447430CD1B15397000DC29E4;
+			productRefGroup = 447430D71B15397000DC29E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				447430D51B15397000DC29E4 /* KFPopupSelector */,
+				447430EA1B15397000DC29E4 /* KFPopupSelectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		447430D41B15397000DC29E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4474310B1B153D4800DC29E4 /* Info.plist in Resources */,
+				4474310A1B153D4800DC29E4 /* Images.xcassets in Resources */,
+				447431081B153D4800DC29E4 /* LaunchScreen.xib in Resources */,
+				4474310E1B153D6700DC29E4 /* Default-568h@2x.png in Resources */,
+				447431091B153D4800DC29E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447430E91B15397000DC29E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		447430D21B15397000DC29E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4474310C1B153D4800DC29E4 /* ViewController.swift in Sources */,
+				447431071B153D4800DC29E4 /* AppDelegate.swift in Sources */,
+				447431111B15418A00DC29E4 /* KFPopupSelector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447430E71B15397000DC29E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447430F21B15397000DC29E4 /* KFPopupSelectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		447430ED1B15397000DC29E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 447430D51B15397000DC29E4 /* KFPopupSelector */;
+			targetProxy = 447430EC1B15397000DC29E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		447431001B153D4800DC29E4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447431011B153D4800DC29E4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		447431021B153D4800DC29E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				447431031B153D4800DC29E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		447430F31B15397000DC29E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		447430F41B15397000DC29E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		447430F61B15397000DC29E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KFPopupSelector/Example App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		447430F71B15397000DC29E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "KFPopupSelector/Example App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		447430F91B15397000DC29E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KFPopupSelectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFPopupSelector.app/KFPopupSelector";
+			};
+			name = Debug;
+		};
+		447430FA1B15397000DC29E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KFPopupSelectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KFPopupSelector.app/KFPopupSelector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		447430D11B15397000DC29E4 /* Build configuration list for PBXProject "KFPopupSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447430F31B15397000DC29E4 /* Debug */,
+				447430F41B15397000DC29E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		447430F51B15397000DC29E4 /* Build configuration list for PBXNativeTarget "KFPopupSelector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447430F61B15397000DC29E4 /* Debug */,
+				447430F71B15397000DC29E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		447430F81B15397000DC29E4 /* Build configuration list for PBXNativeTarget "KFPopupSelectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				447430F91B15397000DC29E4 /* Debug */,
+				447430FA1B15397000DC29E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 447430CE1B15397000DC29E4 /* Project object */;
+}

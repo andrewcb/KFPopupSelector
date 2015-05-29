@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KFPopupSelector" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="750" placeholderIntrinsicWidth="69" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="ErA-It-2Nx" customClass="KFPopupSelector" customModule="KFPopupSelector" customModuleProvider="target">
+                                <rect key="frame" x="16" y="36" width="69" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mys-Ol-0vc">
+                                <rect key="frame" x="93" y="36" width="173" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0F-Cf-39m">
+                                <rect key="frame" x="274" y="36" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SKG-nG-kuV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbU-eI-Vaw">
+                                <rect key="frame" x="16" y="98" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nxA-kf-eBE" customClass="KFPopupSelector" customModule="KFPopupSelector" customModuleProvider="target">
+                                <rect key="frame" x="93" y="91" width="204" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="countryChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="AIy-T3-djz"/>
+                                </connections>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unT-Ry-nGN">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aMW-wq-4o6"/>
+                                    <barButtonItem style="plain" id="jbv-yP-LyD">
+                                        <view key="customView" contentMode="scaleToFill" id="7na-jb-3wO" customClass="KFPopupSelector" customModule="KFPopupSelector" customModuleProvider="target">
+                                            <rect key="frame" x="236" y="6" width="68" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="actionSelected:" destination="vXZ-lx-hvc" eventType="valueChanged" id="phs-Kb-5ZE"/>
+                                            </connections>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ErA-It-2Nx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="3N8-VW-wB5"/>
+                            <constraint firstItem="Mys-Ol-0vc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="16" id="6Iv-Bn-iDN"/>
+                            <constraint firstItem="nxA-kf-eBE" firstAttribute="leading" secondItem="NbU-eI-Vaw" secondAttribute="trailing" constant="11" id="7wP-XX-JaO"/>
+                            <constraint firstItem="NbU-eI-Vaw" firstAttribute="top" secondItem="ErA-It-2Nx" secondAttribute="bottom" constant="32" id="DCV-P5-cxl"/>
+                            <constraint firstItem="Mys-Ol-0vc" firstAttribute="centerY" secondItem="v0F-Cf-39m" secondAttribute="centerY" id="F8z-vf-3i5"/>
+                            <constraint firstAttribute="trailing" secondItem="unT-Ry-nGN" secondAttribute="trailing" id="JzK-Qn-tdf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="unT-Ry-nGN" secondAttribute="bottom" id="ME6-Je-GxJ"/>
+                            <constraint firstItem="Mys-Ol-0vc" firstAttribute="leading" secondItem="ErA-It-2Nx" secondAttribute="trailing" constant="8" id="aWy-Vz-tny"/>
+                            <constraint firstItem="NbU-eI-Vaw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="dYR-g0-yRV"/>
+                            <constraint firstItem="nxA-kf-eBE" firstAttribute="centerY" secondItem="NbU-eI-Vaw" secondAttribute="centerY" id="fiQ-PQ-gpM"/>
+                            <constraint firstItem="Mys-Ol-0vc" firstAttribute="centerY" secondItem="ErA-It-2Nx" secondAttribute="centerY" id="gVt-P6-A2Q"/>
+                            <constraint firstItem="v0F-Cf-39m" firstAttribute="leading" secondItem="Mys-Ol-0vc" secondAttribute="trailing" constant="8" id="il4-i8-rlc"/>
+                            <constraint firstItem="v0F-Cf-39m" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="sWz-EZ-TbV"/>
+                            <constraint firstItem="unT-Ry-nGN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vNP-Uw-7qW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="popup1" destination="ErA-It-2Nx" id="dET-T2-l92"/>
+                        <outlet property="popup2" destination="nxA-kf-eBE" id="Xia-yI-dZz"/>
+                        <outlet property="popup3" destination="7na-jb-3wO" id="jZ9-9y-hId"/>
+                        <outlet property="textField1" destination="Mys-Ol-0vc" id="KOB-EH-v5D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -149,8 +149,8 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
     override func intrinsicContentSize() -> CGSize {
         return button.intrinsicContentSize()
     }
-
-    override func awakeFromNib() {
+    
+    private func setupView() {
         button.setTitle(labelDecoration.apply(unselectedLabelText), forState: .Normal)
         self.addSubview(button)
         button.frame = self.bounds
@@ -158,6 +158,20 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
         
         button.addTarget(self, action: Selector("buttonPressed:"), forControlEvents:.TouchDown)
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: Selector("dragged:")))
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame:frame)
+        setupView()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder:aDecoder)
+        setupView()
+    }
+
+    override func awakeFromNib() {
+        setupView()
     }
     
     private var viewController: UIViewController? {

@@ -62,6 +62,9 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
         button.titleLabel?.font = font
     }
         
+    /** Optional function to call before the popup is opened; this may be used to update the options list. */
+    var willOpenPopup: (()->())? = nil
+    
     func updateLabel() {
         if selectedIndex != nil && displaySelectedValueInLabel {
             switch (options[selectedIndex!]) {
@@ -211,6 +214,7 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
     }
     
     func buttonPressed(sender: AnyObject?) {
+        willOpenPopup?()
         if options.count > 0 {
             let pvc = PopupViewController(style: UITableViewStyle.Plain)
             pvc.options = options

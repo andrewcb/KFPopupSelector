@@ -58,6 +58,10 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
         }
     }
     
+    func setLabelFont(font: UIFont) {
+        button.titleLabel?.font = font
+    }
+        
     func updateLabel() {
         if selectedIndex != nil && displaySelectedValueInLabel {
             switch (options[selectedIndex!]) {

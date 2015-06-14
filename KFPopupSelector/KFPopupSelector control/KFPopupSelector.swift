@@ -21,13 +21,20 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
     }
     
     /** The options the user has to choose from */
-    var options: [Option] = [] 
+    var options: [Option] = [] {
+        didSet {
+            updateButtonState()
+        }
+    }
     
     /** The currently selected value */
     var selectedIndex: Int? = nil {
         didSet {
             updateLabel()
             sendActionsForControlEvents(.ValueChanged)
+            if let index = selectedIndex {
+                itemSelected?(index)
+            }
         }
     }
     
@@ -58,12 +65,37 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
         }
     }
     
+    /** The behaviour when the list of options is empty */
+    enum EmptyBehaviour {
+        /** Leave the button enabled; this allows willOpenPopup to be used to dynamically fill the options */
+        case Enabled
+        /** Disable the button, but display it in a disabled state */
+        case Disabled
+        /** Hide the button */
+        case Hidden
+    }
+    var emptyBehaviour: EmptyBehaviour = .Disabled {
+        didSet {
+            updateButtonState()
+        }
+    }
+    
     func setLabelFont(font: UIFont) {
         button.titleLabel?.font = font
     }
-        
+    
+    /** Optional callback called when the user has selected an item */
+    var itemSelected: ((Int)->())? = nil
+    
     /** Optional function to call before the popup is opened; this may be used to update the options list. */
     var willOpenPopup: (()->())? = nil
+    
+    func updateButtonState() {
+        let empty = options.isEmpty
+        button.enabled = !(empty && emptyBehaviour == .Disabled)
+        button.hidden = empty && emptyBehaviour == .Hidden
+        invalidateIntrinsicContentSize()
+    }
     
     func updateLabel() {
         if selectedIndex != nil && displaySelectedValueInLabel {
@@ -154,7 +186,7 @@ class KFPopupSelector: UIControl, UIPopoverPresentationControllerDelegate {
     }
     
     override func intrinsicContentSize() -> CGSize {
-        return button.intrinsicContentSize()
+        return (options.isEmpty && emptyBehaviour == .Hidden) ? CGSizeZero : button.intrinsicContentSize()
     }
     
     private func setupView() {
